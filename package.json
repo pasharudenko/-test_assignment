@@ -1,0 +1,17 @@
+{
+  "name": "serverless",
+  "scripts": {
+    "frontend:dev": "yarn workspace @serverless/frontend dev",
+    "backend:dev": "yarn workspace @serverless/backend start:dev",
+    "aws:deploy": "cd infrastructure && cdk deploy -f --require-approval never",
+    "aws:destroy": "cd infrastructure && cdk destroy -f --require-approval never",
+    "lambda-layer:build": "yarn workspace @serverless/lambda-layer-utils build",
+    "lambda-layer:watch": "yarn workspace @serverless/lambda-layer-utils watch"
+  },
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "infrastructure",
+    "packages/**"
+  ]
+}
