@@ -17,13 +17,18 @@ Follow these steps to launch the application:
    ```bash
    cd ./apps/backend
 2. **Start Docker containers:**
+   ```bash
    docker-compose up -d
 3. **Install project dependencies from the root directory:**
+   ```bash
    yarn
 4. **Start the NestJS backend server:**
+   ```bash
    yarn run backend:dev
 5. **Start the React frontend application:**
+   ```bash
    yarn run frontend:dev
 6. **Access the applications:**
+   ```bash
    Backend: http://localhost:3000
    Frontend: http://localhost:5173
