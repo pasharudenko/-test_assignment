@@ -1,15 +1,29 @@
-# SETUP
+# Project Setup
 
-Before installing:
+This guide will help you set up and run the project locally.
 
-- make sure you have **yarn** installed globally.
-- make sure you have **docker** installed for the optinal project launch.
+## Prerequisites
 
-## LAUNCH
+Before installing, make sure you have the following installed:
 
-1. Run `cd ./apps/backend`
-2. Run `docker-compose up -d`
-3. From the project root run `yarn`
-4. Run `yarn run backend:dev` to start the nest application
-5. Run `yarn run frontend:dev` to start the react application
-6. You will find backend available on `localhost:3000` and the frontend on `localhost:5173`
+- **Yarn** – [Install Yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
+- **Docker** – [Install Docker](https://docs.docker.com/get-docker/) (optional, for running services via Docker)
+
+## Launch Instructions
+
+Follow these steps to launch the application:
+
+1. **Navigate to the backend directory:**
+   ```bash
+   cd ./apps/backend
+2. **Start Docker containers:**
+   docker-compose up -d
+3. **Install project dependencies from the root directory:**
+   yarn
+4. **Start the NestJS backend server:**
+   yarn run backend:dev
+5. **Start the React frontend application:**
+   yarn run frontend:dev
+6. **Access the applications:**
+   Backend: http://localhost:3000
+   Frontend: http://localhost:5173
